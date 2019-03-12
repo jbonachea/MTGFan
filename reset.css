@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*
+   Name: Joshua Bonachea
+		Assignment: Project V1 
+		Date: 1/20/19
+   
+*/
+
+article, aside, figcaption, figure, footer, header, main, nav, section {
+	display: block;
+}
+
+address, aside, blockquote, cite, dl, dt, dd, h5, h6, main, section, span {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+nav ul {
+	list-style: none;
+	list-style-image: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+body {
+	line-height: 1;
+}

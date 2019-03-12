@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+/*
+   Name: Joshua Bonachea
+		Assignment: Project V1 
+		Date: 1/20/19
+   
+*/
+
+/* Structure */
+html {
+	background-color: rgb(185,252,255);
+	background-color: hsl(200,80%, 95%);
+	background-image: url("Images/white-waves.png");
+	/* Background pattern from Toptal Subtle Patterns */
+}
+body {
+	font-size: 1.1em;
+	overflow: visible;
+}
+article::first-letter {	
+	font-size: 1.25em;
+	-moz-text-shadow: black 1px 1px 2px ;
+}
+header {
+	padding:0px;
+	
+}
+header  img {
+	padding:0px;
+	margin:0px;
+	border:0px;
+	
+}
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+h2 {
+	text-align: center;
+	font-size: 2em;
+	text-shadow: black 2px 2px 10px;
+}
+article {
+	display: block;
+	padding: 25px;
+	font-family: Arial, Helvetica, "Times New Roman";
+	position: relative;
+}
+footer {
+	font-size:.75em;
+	text-align: center;
+	position: inherit;
+	background: linear-gradient(300deg, rgb(161,167,168), rgb(161,251,259));
+	box-shadow: black 1px 1px 1px 1px;
+	clear: both;
+	
+}
+a[href="#top"] {
+	color: green;
+}
+a:hover {
+	font-size: 1.1em;
+}
+/* Navigation */
+nav {
+	display: table;
+	width: 100%;
+	text-align: center;
+	
+	
+	
+}
+figcaption {
+  text-align: center;
+}
+nav ul {
+	display: table-row;
+	
+}
+nav ul li .itemsinalist {
+	display: inline;
+	text-align: center;
+	
+}
+nav ul li a {
+	display: inline;
+	
+	
+}
+/* Definition Lists */
+ ul {
+	 list-style-type: disc;
+ }
+ul ul {
+	list-style-type: lower-alpha;
+}
+ul.versions{
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+ul.versionsul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+ul.versionsul > li > a > p{
+	padding: 0;
+	margin: 0;
+}
+a.versionsTitle:hover+ul.versions, ul.versions:hover{
+	padding: 0;
+	margin: 0;
+	display: block;
+	list-style-type: none;
+}
+div.greenmaindiv, div.greensidediv{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0;
+}
+div.greenmaindiv ul {
+
+	margin: 0;
+}
+div.greenmainitem1,div.greenmainitem2,div.greenmainitem3,div.greensideitem1{
+	flex: 1 1 auto;
+}
+.monomain, .monoside, .borosmain, .borostitle {
+	clear: both;
+	position: relative;
+}
+.monomainleft, .monomainmiddle, .monomainright, .monosideleft {
+	list-style-type: none;
+	position: relative;
+}
+.borossideleft, .borossidemiddle {
+	float: left;
+	list-style-type: none;
+	position: relative;
+}
+figure {
+	text-align: center;
+}
+.greenmana {
+
+	padding-right: 100px;
+	opacity: .75;
+	transform: scale(1.25,1.25);
+	padding-left: 100px;
+	
+}
+table {
+	border:5px solid black;
+	
+}
+table#raDiscussion th, table#raDiscussion td {
+  border: 3px solid grey;
+  line-height: 1.4em;
+  padding: 8px;
+  text-align: center;
+}
+table#raDiscussion th{
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  
+}
+table#raDiscussion td{
+
+  font-size: .9em;
+  vertical-align: top;
+}
+/* Mobile Specific Styles (includes phones and Tablets) */
+@media only screen and (max-width: 760px) {
+	
+.cssgrid {
+	display: grid;
+	grid-template-columns: 100%;
+	position: relative;
+	left: 40px;
+	
+}
+.item1 {
+	grid-area: 1;
+}
+.item2 {
+	grid-area: 2;
+}
+.item3 {
+	grid-area: 3;
+}
+.item4 {
+	grid-area: 4;
+}
+.item5 {
+	grid-area: 5;
+}
+.item6 {
+	grid-area: 6;
+}
+.item7 {
+	grid-area: 7;
+}
+.item8 {
+	grid-area: 8;
+}
+.item9 {
+	grid-area: 9;
+}
+.item10 {
+	grid-area: 10;
+}
+.item11 {
+	grid-area: 11;
+}
+.item12 {
+	grid-area: 12;
+}
+.item13 {
+	grid-area: 13;
+}
+.item14 {
+	grid-area: 14;
+}
+.item15 {
+	grid-area: 15;
+}
+.item16 {
+	grid-area: 16;
+}
+.item17 {
+	grid-area: 17;
+}
+nav ul li {
+	display: table-cell;
+	text-align: center;
+}	
+}
+
+/* Desktop Specific Rules */
+
+@media only screen and (min-width: 761px) {
+	
+.cssgrid {
+	display: grid;
+	grid-template-columns: 33% 34% 30%;
+	position: relative;
+	left: 40px;	
+}
+.item1 {
+	grid-area: 1 / 1 / 1 ;
+}
+.item2 {
+	grid-area: 2 / 1 / 2 ;
+}
+.item3 {
+	grid-area: 3 / 1 / 3 ;
+}
+.item4 {
+	grid-area: 4 / 1 / 4 ;
+}
+.item5 {
+	grid-area: 5 / 1 / 5 ;
+}
+.item6 {
+	grid-area: 6 / 1 / 6 ;
+}
+.item7 {
+	grid-area: 1 / 2 / 1 ;
+}
+.item8 {
+	grid-area: 2 / 2 / 2 ;
+}
+.item9 {
+	grid-area: 3 / 2 / 3 ;
+}
+.item10 {
+	grid-area: 4 / 2 / 4 ;
+}
+.item11 {
+	grid-area: 5 / 2 / 5 ;
+}
+.item12 {
+	grid-area: 6 / 2 / 6 ;
+}
+.item13 {
+	grid-area: 1 / 3 / 1 ;
+}
+.item14 {
+	grid-area: 2 / 3 / 3 ;
+}
+.item15 {
+	grid-area: 3 / 3 / 3 / 3;
+}
+.item16 {
+	grid-area: 4 / 3 / 4 / 3;
+}
+.item17 {
+	grid-area: 5 / 3 / 5 / 3;
+}
+nav ul li {
+	display: table-cell;
+	text-align: center;
+	border-width: 1px;
+	border-style: outset;
+	border-color:black;
+	border-radius: 80%;
+	background-color: rgb(161,201,209);
+}	
+}
+
+
+
+
+
+
