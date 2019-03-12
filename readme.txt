@@ -1,0 +1,1 @@
+This site is a hobby site created for my Web Development 1 College Class.  This site discussed the collectible card game Magic: the Gathering, my decks i user to play, and my opinion on the top 10 cards.
