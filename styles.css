@@ -51,7 +51,7 @@ footer {
 	font-size:.75em;
 	text-align: center;
 	position: inherit;
-	background: linear-gradient(300deg, rgb(161,167,168), rgb(161,251,259));
+	background: linear-gradient(300deg, rgb(161,167,168), rgb(161,251,255));
 	box-shadow: black 1px 1px 1px 1px;
 	clear: both;
 	
