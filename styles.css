@@ -92,6 +92,12 @@ input[type='submit'], input[type='reset']{
 	padding: 5px;
 	margin: 15px;
 }
+iframe {
+	display:block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* Navigation */
 nav {
