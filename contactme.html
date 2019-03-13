@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My MTG Website About">
+    <meta name="keywords" content="Magic: The Gathering, MTG, Ravnica, Gaming, Collectible Card Games">
+    <meta name="author" content="Joshua Bonachea">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">  
+    <title>MTG Standard Mania About</title>
+    <!--
+	    Name: Joshua Bonachea
+		Assignment: Project V1 
+		Date: 1/20/19
+	-->
+  </head>
+  <body>
+    <header>
+      <img src="Images/rna_wbn_rwk_728x90_en.jpg" alt="Magic: The Gathering" style="width:100%" usemap="#splitHeader">
+	  <!--
+	    Picture from Wizards of the Coast:  https://wpn.wizards.com/en/resources/marketing-materials-0#tab_0
+	  -->
+	  <map name="splitHeader">
+	    <area shape="rect" coords="0,0,400,140" href="https://magic.wizards.com/en" alt="Magic: The Gathering" />
+	    <area shape="rect" coords="801,0,1900,140" href="https://magic.wizards.com/en/content/ravnica-weekend" alt="Ravnica Weekend" />
+	  </map> 
+      <h1>About</h1>
+      <nav>
+        <ul>
+	      <li><a href="index.html" id="listitems">Home</a></li>
+	      <li><a class="itemsinalist" href="mydecks.html">My Standard Decks</a></li>		  
+		  <li><a href="radiscussion.html">Ravnica Allegiance Top 10</a></li>
+		  <li><a href="about.html">About</a></li> 
+        </ul>  
+      </nav>
+    </header> 
+    <article>
+	<form id="contactme" action="#" method="post" enctype="application/x-www-form-urlencoded">
+	  <fieldset id="ContactInfo">
+	    <legend>Customer Info</legend>
+		<div class="formRow">
+	    <label for="fname">First Name:</label>
+		<!--
+		
+		
+		-->
+		<!--
+		  M7LO5 Demonstrate the use of a text box in a form		
+		-->
+	    <input name="fname" id="fname" size="20" type="text" required />
+		</div>
+		<div class="formRow">
+		<label for="lname">Last Name:</label>
+		<input name="lname" id="lname" size="20" type="text" required />
+		</div>
+		<div class="formRow">
+		<label for="city">City:</label>
+		<input name="city" id="city" size="12" type="text" />
+		</div>
+		<div class="formRow">
+		<label for="state">State:</label>
+		<input name="state" id="state" size="2" type="text" />
+		</div>
+		<div class="formRow">
+		<label for="email">Email Address:</label>
+		<input name="email" id="email" size="40" type="email" required />
+		</div>
+		</fieldset>
+	  <fieldset id="answers">
+	  <legend>Feedback</legend>
+		<div class="formRow">
+		  <label for="pageLike">What page did you like?</label>
+		  <!--
+		    M7LO8 Demonstrate the use of a selection list in a form
+		  -->
+		  <select name="pageLike" id="pageLike">
+		    <option value="index">Main Page</option>
+			<option value="mydecks">My Standard Decks</option>
+			<option value="radiscussion">Ravnica Allegiance Top 10</option>
+			<option value="about">About</option>
+			<option value="contactme">This Form</option>
+          </select>		
+        </div>		  
+		<div class="formRow">
+		  <label>Do you like Ravnica Allegiance?</label>
+		  <!--
+		    M7LO7 Demonstrate the use of radio buttons in a form
+		  -->
+		  <fieldset class="opt1">
+		    <label for="cYes">Yes</label>
+			<input name="oQuestion" id="cYes" value="yes" type="radio" />
+			<label for="cNo">No</label>
+			<input name="oQuestion" id="cNo" value="no" type="radio" />
+		  </fieldset>
+		</div>
+		<label for="comments">Please leave a comment!</label>
+		<!--
+		  M7LO9 Demonstrate the use of a text area in a form
+		-->
+		<textarea name="comments" id="comments"></textarea>
+		<!--
+		  M7LO6 Demonstrate the use of check boxes in a form
+		-->
+		<input name="mailing" id="mailing" type="checkbox" />
+		<label for="mailing">Please add me to your mailing list for updates</label>		
+	  </fieldset>
+	  <div id="buttons">
+	  
+	    <!--
+	      M7LO10 Demonstrate the use of a submit button in a form
+	    -->
+	    <input value="Submit" type="submit" />
+	    <input value="Clear" type="reset" />
+	  </div>
+	</form>
+    </article>   
+    <footer>
+      <p>Magic Mania is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+    </footer>
+  </body>
+</html>

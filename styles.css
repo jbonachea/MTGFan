@@ -62,6 +62,37 @@ a[href="#top"] {
 a:hover {
 	font-size: 1.1em;
 }
+
+/*
+M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form)
+
+These formattings change the layout to flex depending on the mobile size. full screen will have the text box across from the label. Smaller screen will have the text box below the label
+It also adds some extra padding for looks, expands the textarea size and aligns the submit / rest buttons.
+*/
+div.formRow{
+	display: flex;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+}
+div.formRow > * {
+	flex: 1 1 300px;
+	padding: 10px;
+	margin: 10px;
+}
+textarea{
+	margin-top: 5px;
+	height: 250px;
+	width: 98%;
+}
+div#buttons{
+	text-align: center;
+	width: 100%;
+}
+input[type='submit'], input[type='reset']{
+	padding: 5px;
+	margin: 15px;
+}
+
 /* Navigation */
 nav {
 	display: table;
@@ -172,6 +203,20 @@ table#raDiscussion td{
   font-size: .9em;
   vertical-align: top;
 }
+#contactme{
+	clear: both;
+}
+
+/* Transitions */
+
+/*
+M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML)
+This is a hover transition on my pictures in the my standard decks page.  On hovering, it shrinks the picture.
+*/
+.greenmana:hover {
+	transform: scale(0.8);
+}
+
 /* Mobile Specific Styles (includes phones and Tablets) */
 @media only screen and (max-width: 760px) {
 	
